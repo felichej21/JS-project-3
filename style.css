@@ -1,0 +1,338 @@
+
+
+ {
+    box-sizing: border-box;
+    
+  }
+ 
+  body {
+    
+    font-family: 'bauhaus', sans-serif;
+    font-size: 40px;
+    height: 100vh; 
+    
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    align-self: center;
+  }
+  
+  .page-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+  }
+
+  .video-wrapper {
+    
+    align-self: center;
+    justify-content: center;
+    
+    
+    
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Bahnschrift light';
+    margin: 0;
+    width: 80%;
+    color: white;
+    text-shadow: 2px 2px 10px gray;
+  }
+  
+  h2 {
+    
+    font-size: 1rem;
+    
+    color: whitesmoke;
+  }
+  
+  article {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  p {
+    line-height: 2rem;
+    color: #3d6ded;
+  }
+  
+  .purple {
+    color: #977EF2;
+    font-weight: bold;
+  }
+  
+  .red {
+    color: #977EF2;
+  }
+  
+  .button {
+    color:#FFFFFF;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5rem;
+    
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    transition: all 0.15s;
+  }
+  
+  .nav-item {
+    align-self: flex-end; 
+    padding: 0.5em 3em;
+    border: 0.16em solid black;
+    border-radius: 10px;
+    margin: 0 0.8em 0.3em 0;
+    text-decoration:none;
+    font-family:'Arial', cursive;
+    color:blue;
+    transition: all 0.15s;
+    font-size: 1.3rem;
+    display: inline-block; 
+  }
+  
+  nav {
+    width:90%;
+    padding: 2rem 0 1.5rem 0;
+    border-bottom: 2px blue;
+    text-align: center;
+    margin: 0;
+  }
+  
+  a.nav-item:hover {
+    color:black;
+    border-color:#DDDDDD;
+    background-color: #3d6ded;
+    transform: scale(1.1);
+    transform-origin: center;
+    animation: psychadelic 1.5s infinite linear;
+    }
+  
+  a.nav:active {
+    color:black;
+    border-color:black;
+    }
+  
+ 
+  .home:hover {
+    cursor: pointer;;
+  }
+  
+  .profile-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+  }
+  
+  .profile-image {
+    background-color: black;
+    border-radius: 80%;
+    color: black;
+    height: 180px;
+    margin: 50px;
+    width: 180px;
+    border-color: white;
+  }
+    
+  .icon_layout {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    margin: 0 0 0 -3%;
+  }
+  
+  .icon_style {
+    font-size: 3rem;
+    transition: all 0.15s;
+    color: white;
+    margin: 0.5rem 0;
+  }
+  
+  .icon_style:hover , .button:hover , iframe:hover , footer a:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+    cursor: pointer;
+  }
+  
+  li {
+    font-family: 'Arial', cursive;
+    color:red;
+  }
+  
+  ul {
+    list-style:none;
+    padding: 0;
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  
+  .header {
+    border-radius: 0 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  
+  .left-hand {
+    width: 90%;
+    
+  }
+  
+  .right-hand {
+    width: 48%;
+    text-align: left;
+    margin-left: 0.5rem;
+  }
+  
+  form {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 2rem 0;
+    padding: 0;
+  }
+  
+  fieldset {
+    padding: 0;
+    margin: 0 2rem;
+    width: 45%;
+    background-color: black;
+    border: none;
+    border-radius: 10px 0;
+    box-shadow: 2px 2px 20px 0px #8E8E8E;
+  }
+  
+  legend {
+    display: block;
+    font-weight: bold;
+    font-family: 'Arial';
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+  label {
+    display: block;
+    font-size: 1.3rem;
+    margin: 1rem 0 0 1rem;
+    padding: 0;
+    color: white;
+  }
+  input {
+    display: block;
+    margin: 0.2rem 0 1rem 1rem;
+    width: 80%;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.2rem;
+  }
+  select {
+    margin-left: 1rem;
+    display: block;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.2rem;
+  }
+  textarea {
+    display: block;
+    border-radius: 10px;
+    height: 10rem;
+    margin: 0.2rem 0 1rem 1rem;
+    padding: 1rem;
+    border: none;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.2rem;
+  }
+  
+  blockquote , cite {
+    margin: 1rem 1rem 1rem 0;
+    font-family: 'Special Elite', cursive;
+    color: #3FBF83;
+    line-height: 2rem;
+  }
+  
+  iframe {
+    padding: 0;
+    margin: 1.8rem 0 1rem 1rem;
+    border-radius: 10px;
+    -moz-box-shadow: 4px 4px 40px 0px #BCB5DB;
+    box-shadow: 4px 4px 40px 0px #BCB5DB;
+  }
+  
+  .travel , .buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .travel  .left-hand{
+    margin: -10rem 2rem 0 -2rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  
+  .button:disabled {
+    background-color:black;
+    cursor: not-allowed;
+  }
+  
+  .submit {
+    font-family: 'arial', cursive;
+    height: 120px;
+    margin-top: 13%;
+  }
+  .submit:hover {
+    animation: psychadelic 1s infinite linear;
+  }
+  
+  footer {
+    text-align: center;
+    background: black;
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    flex-basis: 15%;
+    text-decoration: none;
+    padding: 0;
+    margin: 1rem 1rem 0 0;
+    color: #FFFFFF;
+    transition: all 0.15s;
+  }
+  
+  footer p {
+    flex-basis: 50%;
+    font-weight: bold;
+  }
+  
+  i {
+    margin-left: 2px;
+  }
+  
+ 

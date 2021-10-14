@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Raleway&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c91f4d4f4a.js" crossorigin="anonymous"></script>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section>
+      <div class="page-wrapper">
+        
+            <h1>
+              felipe.chejfec@gmail.com
+            </h1>
+
+          </div>
+          <form>
+            <fieldset>
+              <legend>Contact information</legend>
+              <label for="first_name">Your first name</label>
+              <input type="text" id="first_name" name="first_name" required autofocus placeholder="type your first name here">
+              <label for="last_name">Your last name</label>
+              <input type="text" id="last_name" name="last_name" placeholder="type your last name here">
+              <label for="email">Your email</label>
+              <input type="email" id="email" name="email" required placeholder="type your email here">
+            </fieldset>
+            <fieldset>
+              <legend>Inquiry</legend>
+              <label for="selection">Do you enjoy this website?</label>
+              <select id="selection" name="selection" size="1" required>
+                <option value="">Please select one...</option>
+                <option value="verysatisfied">Very satisfied</option>
+                <option value="satisfied">Satisfied</option>
+                <option value="neutral">Neutral</option>
+                <option value="unsatified">Unsatisfied</option>
+                <option value="veryunsatisfied">Very unsatisfied</option>
+              </select>
+            
+              <label for="comments">Comments</label>
+              <textarea id="comments" name="comments" placeholder="Comments, advice or anything you'd like to share with me..." minlength="5" maxlength="500" required rows="10" cols="30"></textarea>
+            </fieldset>
+          
+            <button class="button submit" disabled="" id="submit">Submit</button>
+          </form> 
+          
+        </div>
+      </div>
+      <footer>
+        <a href="./index.html"> Home <     
+        </a>
+        <a href="./about.html">About =
+        </a>
+        <a href="./contact.html">Contact >
+        </a>
+        <p class="footer"></p>
+      </footer>
+
+      
+    </section>
+    <script src="./portfolio.js"></script>
+  </body>
+</html>
