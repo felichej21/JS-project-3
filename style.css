@@ -1,16 +1,38 @@
+
 body {
 
   margin:0;
   padding: 0;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  
 
 }
 
+
+.page-wrapper {
+  height:100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  
+  
+  
+}
+
+
 .container {
 
-  height:40vh;
-  width: 100vh;
+  height:70vh;
+  width: 70vh;
   background-image: url(1.jpg);
   background-size: cover;
   background-position: center;
@@ -29,27 +51,29 @@ body {
 }
 
 @keyframes animate {
+  
+  
 
   0%{ 
-      background-image:url(1.jpg);
-  }10%{ 
-      background-image:url(1.jpg);
-  }20%{ 
       background-image:url(2.jpg);
-  }30%{ 
+  }10%{ 
+      background-image:url(2.jpg);
+  }20%{ 
       background-image:url(3.jpg);
-  }40%{ 
+  }30%{ 
       background-image:url(4.jpg);
-  }50%{ 
+  }40%{ 
       background-image:url(5.jpg);
-  }60%{ 
+  }50%{ 
       background-image:url(6.jpg);
-  }70%{ 
+  }60%{ 
       background-image:url(7.jpg);
-  }80%{ 
+  }70%{ 
       background-image:url(8.jpg);
-  }90%{ 
+  }80%{ 
       background-image:url(9.jpg);
+  }90%{ 
+      background-image:url(10.jpg); 
   }100%{ 
       background-image:url(10.jpg);}
 }
@@ -59,28 +83,7 @@ body {
     
   }
  
-  body {
-    display: flex;
-    font-family: 'bauhaus', sans-serif;
-    font-size: 40px;
-    height: 100vh; 
-    justify-content: center;
-    padding: 0;
-    width: 100%;
-    background-color: white;
-    align-self: center;
-  }
   
-  .page-wrapper {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    
-    
-    
-  }
-
   .video-wrapper {
     align-self: center;
     justify-content: center;
@@ -91,7 +94,7 @@ body {
   h1 {
     text-align: center;
     font-size: 1.8rem;
-    font-family: 'Bahnschrift light';
+    font-family: 'calibri';
     margin: 0;
     width: 80%;
     color: white;
@@ -121,7 +124,7 @@ body {
   }
   
   .red {
-    color: #977EF2;
+    color: black;
   }
   
   .button {
@@ -180,10 +183,22 @@ body {
   .home:hover {
     cursor: pointer;;
   }
-  
+
+  .cardHome {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+   
+  }
+
+  .containerA {
+    height: 40vh;
+    margin: 70vh;
+  }
   .profile-wrapper {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -208,14 +223,15 @@ body {
     justify-content: center;
     position: relative;
     padding: 0;
-    margin: 0 0 0 -3%;
+    margin: 0 20px;
+    
   }
   
   .icon_style {
     font-size: 3rem;
     transition: all 0.15s;
     color: black;
-    margin: 0.5rem 0;
+    margin: 0 20px;
   }
   
   .icon_style:hover , .button:hover , iframe:hover , footer a:hover {
@@ -236,7 +252,10 @@ body {
     margin-block-start: 0;
     margin-block-end: 0;
   }
-  
+  .TopHeader {
+    height: 60px;
+    width: 60px;
+  }
   .header {
     border-radius: 0 10px;
     display: flex;
@@ -291,13 +310,13 @@ body {
     display: block;
     margin: 0.2rem 0 1rem 1rem;
     width: 80%;
-    font-family: 'Baloo Bhaina 2', cursive;
+    font-family: 'calibri', cursive;
     font-size: 1.2rem;
   }
   select {
     margin-left: 1rem;
     display: block;
-    font-family: 'Baloo Bhaina 2', cursive;
+    font-family: 'calibri', cursive;
     font-size: 1.2rem;
   }
   textarea {
@@ -307,14 +326,14 @@ body {
     margin: 0.2rem 0 1rem 1rem;
     padding: 1rem;
     border: none;
-    font-family: 'Baloo Bhaina 2', cursive;
+    font-family: 'calibri', cursive;
     font-size: 1.2rem;
   }
   
   blockquote , cite {
     margin: 1rem 1rem 1rem 0;
-    font-family: 'Special Elite', cursive;
-    color: #3FBF83;
+    font-family: 'calibri', cursive;
+    color: black;
     line-height: 2rem;
   }
   
@@ -322,8 +341,8 @@ body {
     padding: 0;
     margin: 1.8rem 0 1rem 1rem;
     border-radius: 10px;
-    -moz-box-shadow: 4px 4px 40px 0px #BCB5DB;
-    box-shadow: 4px 4px 40px 0px #BCB5DB;
+    -moz-box-shadow: 4px 4px 40px 0px ;
+    box-shadow: 4px 4px 40px 0px ;
   }
   
   .travel , .buttons {
@@ -357,6 +376,14 @@ body {
   .submit:hover {
     animation: psychadelic 1s infinite linear;
   }
+
+  .bottonsLCR {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
   
   footer {
     text-align: center;
@@ -365,7 +392,7 @@ body {
     margin: 0;
     color: black;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     font-size: 0.9rem;
   }
   
@@ -387,4 +414,49 @@ body {
     margin-left: 2px;
   }
   
- 
+ .bottonL {
+   height: 40px;
+   width: 40px;
+   margin: 0 20px;
+ }
+
+ .bottonC {
+  height: 40px; 
+  width: 40px;
+  margin: 0 20px;
+  
+}
+
+.bottonR {
+  height: 40px;
+  width: 40px;
+  margin: 0 20px;
+
+}
+.welcome{
+  height:60px;
+  position:fixed;
+  top:50%;
+}
+
+.blankSpace {
+  height: 30vh;
+  width: 30vh;
+
+}
+.blankSpace2 {
+  height: 10vh;
+  width: 10vh;
+
+}
+
+.WelcomeBotton {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'calibri';
+  margin: 0;
+  width: 10%;
+  color: black;
+  text-shadow: 2px 2px 10px gray;
+
+}
